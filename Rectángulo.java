@@ -6,8 +6,9 @@ public class Rectángulo extends Figura {
     private double base;
     private double altura;
 
+    //Constructor de la clase rectángulo
     public Rectángulo(double x, double y, Color color, double base, double altura) {
-        super(x, y, color);
+        super(x, y, color); //Llamamos al constructor de figura
         this.base = base;
         this.altura = altura;
     }
