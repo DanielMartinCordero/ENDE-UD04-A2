@@ -35,6 +35,11 @@ public abstract class Figura {
         this.color = color;
     }
 
+    public String toString() {
+        return "Coordenadas: " + centro.getX() + " " + centro.getY() + ". \n " +
+                "Color:" + color;
+    }
+
     public abstract double perímetro();
 
     public abstract double área();
