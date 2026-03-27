@@ -4,17 +4,17 @@ import java.awt.Color;
 
 /**
  * Representa un cuadrado dentro del sistema.
- * Esta clase es una especialización de {@link Rectángulo} donde se garantiza
+ * Esta clase es una especialización de {@link Rectangulo} donde se garantiza
  * que tanto la base como la altura tengan la misma dimensión (lado).
  *
  * @author DanielMartinCordero
  * @version 1.0
  */
-public class Cuadrado extends Rectángulo {
+public class Cuadrado extends Rectangulo {
 
     /**
      * Construye un nuevo objeto Cuadrado con una posición, color y dimensión especificados.
-     * El constructor invoca al de la superclase {@link Rectángulo} pasando el parámetro
+     * El constructor invoca al de la superclase {@link Rectangulo} pasando el parámetro
      * del lado para ambos ejes de dimensión.
      *
      * @param x Coordenada horizontal del centro de la figura.

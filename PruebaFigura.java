@@ -60,7 +60,7 @@ public class PruebaFigura {
     }
 
     /**
-     * Solicita datos y genera un {@link Rectángulo}.
+     * Solicita datos y genera un {@link Rectangulo}.
      * @param teclado Scanner activo para lectura.
      * @param x Coordenada X.
      * @param y Coordenada Y.
@@ -70,13 +70,13 @@ public class PruebaFigura {
         double base = teclado.nextDouble();
         System.out.print("Introduzca la altura del Rectangulo: ");
         double altura = teclado.nextDouble();
-        Rectángulo r = new Rectángulo(x, y, COLOR_DEFECTO, base, altura);
+        Rectangulo r = new Rectangulo(x, y, COLOR_DEFECTO, base, altura);
         System.out.println(EL_PERIMETRO_ES + r.perimetro());
         System.out.println(EL_AREA_ES + r.area());
     }
 
     /**
-     * Solicita datos y genera un {@link Triángulo}.
+     * Solicita datos y genera un {@link Triangulo}.
      * @param teclado Scanner activo para lectura.
      * @param x Coordenada X.
      * @param y Coordenada Y.
@@ -88,7 +88,7 @@ public class PruebaFigura {
         double lado2 = teclado.nextDouble();
         System.out.print(INTRODUZCA_EL_LADO + " 3 del Triangulo: ");
         double lado3 = teclado.nextDouble();
-        Triángulo t = new Triángulo(x, y, COLOR_DEFECTO, lado1, lado2, lado3);
+        Triangulo t = new Triangulo(x, y, COLOR_DEFECTO, lado1, lado2, lado3);
         System.out.println(EL_PERIMETRO_ES + t.perimetro());
         System.out.println(EL_AREA_ES + t.area());
     }

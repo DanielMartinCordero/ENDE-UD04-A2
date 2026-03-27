@@ -10,53 +10,68 @@ public class Punto {
     private double x;
     private double y;
 
-    /** Constructor por defecto que inicializa el punto en el origen (0,0). */
+    /** Crea un nuevo punto inicializado en el origen de coordenadas. */
     public Punto() { x = 0; y = 0; }
 
     /**
-     * Constructor con parámetros.
+     * Crea un nuevo punto con coordenadas específicas.
      * @param x Coordenada horizontal.
      * @param y Coordenada vertical.
      */
     public Punto(double x, double y) { this.x = x; this.y = y; }
 
     /**
-     * Constructor de copia.
+     * Crea un nuevo punto a partir de otro punto existente (constructor de copia).
      * @param p Instancia de {@link Punto} de la que se copiarán las coordenadas.
      */
     public Punto(Punto p) { x = p.x; y = p.y; }
 
-    /** @return Coordenada X. */
+    /** * Obtiene el valor de la coordenada X.
+     * @return Coordenada X.
+     */
     public double getX() { return x; }
-    /** @return Coordenada Y. */
+
+    /** * Obtiene el valor de la coordenada Y.
+     * @return Coordenada Y.
+     */
     public double getY() { return y; }
-    /** @param x Nueva coordenada X. */
+
+    /** * Establece un nuevo valor para la coordenada X.
+     * @param x Nueva coordenada X.
+     */
     public void setX(double x) { this.x = x; }
-    /** @param y Nueva coordenada Y. */
+
+    /** * Establece un nuevo valor para la coordenada Y.
+     * @param y Nueva coordenada Y.
+     */
     public void setY(double y) { this.y = y; }
 
     /**
-     * Calcula la distancia euclídea entre este punto y otro.
+     * Calcula la distancia lineal entre este punto y otro punto dado.
      * @param p Punto de destino.
-     * @return Distancia entre ambos puntos.
+     * @return Distancia euclídea entre ambos puntos.
      */
     public double distancia(Punto p) {
         return Math.sqrt(Math.pow(p.x - this.x, 2) + Math.pow(p.y - this.y, 2));
     }
 
     /**
-     * Genera un nuevo punto simétrico respecto al eje Y.
+     * Calcula el punto simétrico respecto al eje Y.
      * @return Nuevo objeto {@link Punto} con la coordenada X invertida.
      */
     public Punto simetrico() { return new Punto(this.x * -1, this.y); }
 
     /**
-     * Compara si dos puntos tienen las mismas coordenadas.
+     * Determina si dos puntos son iguales comparando sus coordenadas.
      * @param p Punto a comparar.
-     * @return true si las coordenadas coinciden, false en caso contrario.
+     * @return true si las coordenadas coinciden exactamente, false en caso contrario.
      */
     public boolean compara(Punto p) { return p.x == x && p.y == y; }
 
+    /**
+     * Genera una representación textual del punto.
+     * @return Cadena de texto con formato (x,y).
+     */
     @Override
     public String toString() { return "(" + x + "," + y + ")"; }
 }

@@ -28,38 +28,50 @@ public abstract class Figura {
         this.color = color;
     }
 
-    /** @return La coordenada X del centro de la figura. */
+    /** * Obtiene la coordenada X del centro.
+     * @return La coordenada X del centro de la figura.
+     */
     public double getXCentro() { return centro.getX(); }
 
-    /** @return La coordenada Y del centro de la figura. */
+    /** * Obtiene la coordenada Y del centro.
+     * @return La coordenada Y del centro de la figura.
+     */
     public double getYCentro() { return centro.getY(); }
 
-    /** @return El color actual de la figura. */
+    /** * Obtiene el color de la figura.
+     * @return El color actual de la figura.
+     */
     public Color getColor() { return color; }
 
-    /** @param x Nueva coordenada X para el centro. */
+    /** * Establece la coordenada X del centro.
+     * @param x Nueva coordenada X para el centro.
+     */
     public void setXCentro(double x) { centro.setX(x); }
 
-    /** @param y Nueva coordenada Y para el centro. */
+    /** * Establece la coordenada Y del centro.
+     * @param y Nueva coordenada Y para el centro.
+     */
     public void setYCentro(double y) { centro.setY(y); }
 
-    /** @param color Nuevo color para la figura. */
+    /** * Establece el color de la figura.
+     * @param color Nuevo color para la figura.
+     */
     public void setColor(Color color) { this.color = color; }
 
     /**
-     * Calcula el perímetro de la figura.
+     * Calcula el perímetro total de la figura.
      * @return Valor numérico del perímetro.
      */
     public abstract double perimetro();
 
     /**
-     * Calcula el área de la figura.
+     * Calcula el área total de la figura.
      * @return Valor numérico del área.
      */
     public abstract double area();
 
     /**
-     * Compara el área de esta figura con otra dada.
+     * Compara el área de esta figura con otra dada para determinar cuál es mayor.
      *
      * @param otraFigura La figura con la que se desea comparar.
      * @return Un entero: 1 si esta es mayor, -1 si es menor, 0 si son iguales.
